@@ -1,0 +1,51 @@
+
+  <div class="element-bg-img"><img src="{{list[0].img}}" alt="" class="img-responsive"> </div>
+  <div class="element-left-bottom">
+    <div class="village">
+      <h3>Righteous indignation & like</h3>
+      <span class="line"> </span>
+      <div class="activity_box">
+        <div class="scrollbar" id="style-2">
+          <div class="activity-row" (click)="choose(list[0])">
+            <div class="activity-desc">
+              <h5>Resort Address</h5>
+              <p>{{list[0].address}}</p>
+              <h6>Tel:{{list[0].tel}}</h6>
+            </div>
+            <div class="activity-img">
+              <ul>
+                <li><img src='{{list[0].imgSmall}}' alt="" /></li>
+              </ul>
+            </div>
+            <div class="clear"> </div>
+          </div>
+          <div class="activity-row" (click)="choose(list[1])">
+            <div class="activity-desc">
+              <h5>Resort Address</h5>
+              <p>{{list[1].address}}</p>
+              <h6>Tel:{{list[1].tel}}</h6>
+            </div>
+            <div class="activity-img">
+              <ul>
+                <li><img src='{{list[1].imgSmall}}' alt="" /></li>
+              </ul>
+            </div>
+            <div class="clear"> </div>
+          </div>
+          <div class="activity-row" (click)="choose(list[2])">
+            <div class="activity-desc">
+              <h5>Resort Address</h5>
+              <p>{{list[2].address}}</p>
+              <h6>Tel:{{list[2].tel}}</h6>
+            </div>
+            <div class="activity-img">
+              <ul>
+                <li><img src='{{list[2].imgSmall}}' alt="" /></li>
+              </ul>
+            </div>
+            <div class="clear"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
