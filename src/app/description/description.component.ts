@@ -1,5 +1,4 @@
 import {Component, Input} from '@angular/core';
-import {place} from "../place";
 
 @Component({
   selector: 'app-description',
@@ -9,6 +8,6 @@ import {place} from "../place";
 export class DescriptionComponent {
 
   @Input()
-  public place: place;
+  public planet: Planet;
 
 }

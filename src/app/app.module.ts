@@ -7,20 +7,21 @@ import { AppComponent } from './app.component';
 import { ListComponent } from './list/list.component';
 import { DescriptionComponent } from './description/description.component';
 import { WeatherComponent } from './weather/weather.component';
+import { CardComponent } from './card/card.component';
+import { PlanetFilterPipe } from './pipes/planet-filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
     DescriptionComponent,
-    WeatherComponent
+    WeatherComponent,
+    CardComponent,
+    PlanetFilterPipe
   ],
   imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule
+    BrowserModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

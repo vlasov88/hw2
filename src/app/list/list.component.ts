@@ -1,24 +1,40 @@
-import {Component, Input, Output, EventEmitter} from '@angular/core';
-import {place} from "../place";
+import {Component, EventEmitter, Input, Output, } from '@angular/core';
+import {PlanetFilterMode} from '../pipes/planet-filter.pipe';
 
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.css']
 })
-export class ListComponent{
+export class ListComponent {
+
+  public filterModes: typeof PlanetFilterMode = PlanetFilterMode;
+  public filtermode: PlanetFilterMode;
+
+  public _list: Planet[];
 
   @Input()
-  public list: place[];
+  public set list(list: Planet[]) {
+    this._list = list;
+    this.chosenPlanet = list && list[0];
+  }
+
+  public get list(): Planet[] {
+    return this._list;
+  }
 
   @Output()
-  public chosen: EventEmitter<place> = new EventEmitter();
+  public chosen: EventEmitter<Planet> = new EventEmitter();
 
-  public chosenPlace: place;
+  public chosenPlanet: Planet;
 
-  public choose(chosen: place) {
-    this.chosenPlace = chosen;
-    this.chosen.emit(chosen)
+  public choose(chosen: Planet): void {
+    this.chosenPlanet = chosen;
+    this.chosen.emit(chosen);
+  }
+
+  public setFilterMode(mode: PlanetFilterMode) {
+     this.filtermode = mode;
   }
 
 }

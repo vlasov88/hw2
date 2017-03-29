@@ -32,7 +32,7 @@ img{max-width:100%;}
 body{
   font-family: 'Roboto', sans-serif;
   font-size: 100%;
-  background:#313144;
+  background: url(./assets/images/space.jpg)no-repeat;
 }
 a {
   text-decoration: none;
@@ -106,8 +106,9 @@ span.w-line {
   color: #fff;
 }
 .teddy-text img {
-  border-radius: 70px;
-  border: 3px solid #fff;
+  width: 400px;
+  border-radius: 10%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .teddy-follow {
   background: #f2f1ef;
@@ -131,7 +132,9 @@ span.w-line {
   border-right: 1px solid #000;
 }
 .element-bg-img img {
-  border-radius: 6px 6px 0px 0px;
+  border-radius: 60px 60px 0px 0px;
+  width: 100%;
+  min-height: 100px;
 }
 span.cloud {
   background: url(./assets/images/cloudy.png)no-repeat;
@@ -225,6 +228,7 @@ i.text-info{
 }
 .activity-row{
   margin-bottom:1em;
+  height: 60px;
 }
 .scrollbar{
   height:115px;
@@ -265,7 +269,8 @@ i.text-info{
   display: inline-block;
 }
 .activity-img ul li img{
-  border-radius:50px;
+  width: 50px;
+  border-radius:20px;
 }
 /*--village start here--*/
 .village {

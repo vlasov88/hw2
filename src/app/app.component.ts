@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {place} from "./place";
+import { Observable } from 'rxjs/Observable';
+import {planets} from './mock-data';
 
 @Component({
   selector: 'app-root',
@@ -8,43 +9,8 @@ import {place} from "./place";
 })
 export class AppComponent {
 
-  public places: place[];
+  public planets: Planet[] = planets;
 
-  public chosenPlace: place;
-
-  constructor() {
-    this.places = [
-      {
-        address: "Sed perspiciatis",
-        tel: "+1285 968 685",
-        img: "./assets/images/1.jpg",
-        imgSmall: "./assets/images/r1.jpg",
-        followers: 10,
-        following: 10,
-        temperature: 10
-      },
-      {
-        address: "Sed ut perspiciatis",
-        tel: "+1285 968 685",
-        img: "./assets/images/b1.jpg",
-        imgSmall: "./assets/images/res.jpg",
-        followers: 20,
-        following: 20,
-        temperature: 20,
-      },
-      {
-        address: "Sed ut perspiciatis",
-        tel: "+1285 968 685",
-        img: "./assets/images/1.jpg",
-        imgSmall: "./assets/images/r1.jpg",
-        followers: 30,
-        following: 30,
-        temperature: 30
-      }
-  ];
-    this.chosenPlace = this.places[0];
-
-  }
-
+  public chosenPlanet: Planet = planets && planets[0];
 
 }

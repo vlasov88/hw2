@@ -1,14 +1,14 @@
-<h1>Hot Weather Widget</h1>
+<h1>Planet Widget</h1>
 <div class="element">
   <div class="element-left">
-    <app-list [list]="places" (chosen)="chosenPlace=$event"></app-list>
+    <app-list [list]="planets" (chosen)="chosenPlanet=$event"></app-list>
   </div>
   <div class="element-right">
-    <app-weather [temperature]="chosenPlace.temperature"></app-weather>
-    <app-description [place]="chosenPlace"></app-description>
+    <app-weather [temperature]="chosenPlanet.temperature"></app-weather>
+    <app-description [planet]="chosenPlanet"></app-description>
   </div>
   <div class="clear"> </div>
 </div>
 <div class="copy-right">
-  <p>© 2015 Hot Weather Widget. All rights reserved | Design by <a href="http://w3layouts.com/" target="_blank">  W3layouts </a></p>
+  <p>© 2015 Planet Widget. All rights reserved | Design by <a href="http://w3layouts.com/" target="_blank">  W3layouts </a></p>
 </div>

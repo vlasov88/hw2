@@ -1,18 +1,18 @@
 <div class="teddy-bear">
   <div class="teddy-text">
-    <h4>{{place.address}}</h4>
+    <h4>{{planet.name}}</h4>
     <span class="w-line"> </span>
-    <img src="{{place.imgSmall}}" alt="" class="img-responsive">
+    <img src="{{planet.imgSmall}}" alt="" class="img-responsive">
   </div>
   <div class="teddy-follow">
     <ul>
       <li class="folw-h">
-        <h3>{{place.followers}}</h3>
-        <p>Followers</p>
+        <p>Спутников: </p>
+        <h3>{{planet.satellite}}</h3>
       </li>
       <li>
-        <h3>{{place.following}}</h3>
-        <p>Following</p>
+        <p>Радиус:</p>
+        <h3>{{planet.radius}} км</h3>
       </li>
     </ul>
   </div>
